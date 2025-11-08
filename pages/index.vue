@@ -4,37 +4,12 @@
       <!-- Header -->
       <header class="text-center mb-10 border-2 border-[#1a3a52] rounded-3xl p-8 bg-gradient-to-br from-[#0a0e17] to-[#0d1520] shadow-[0_0_30px_rgba(0,217,255,0.1)]">
         <h1 class="text-5xl font-bold tracking-[0.5em] mb-4 [text-shadow:_0_0_20px_rgba(0,217,255,0.5)]">
-          SMARTPETRO
+          SMARTCITY
         </h1>
         
         <div class="w-20 h-20 border-4 border-[#00d9ff] rounded-full mx-auto my-5 relative flex items-center justify-center">
           <div class="absolute w-12 h-12 border-2 border-[#00d9ff] rounded-full"></div>
           <div class="absolute w-5 h-5 bg-[#00d9ff] rounded-full shadow-[0_0_20px_rgba(0,217,255,0.8)]"></div>
-        </div>
-
-        <div class="flex gap-5 justify-center mt-5">
-          <button
-            @click="currentLang = 'ru'"
-            :class="[
-              'bg-transparent border-2 px-8 py-3 rounded-xl cursor-pointer transition-all uppercase tracking-wider',
-              currentLang === 'ru' 
-                ? 'border-[#00d9ff] bg-[#00d9ff] text-[#0a0e17] shadow-[0_0_20px_rgba(0,217,255,0.5)]' 
-                : 'border-[#1a3a52] text-[#00d9ff] hover:border-[#00d9ff]'
-            ]"
-          >
-            Русский
-          </button>
-          <button
-            @click="currentLang = 'kz'"
-            :class="[
-              'bg-transparent border-2 px-8 py-3 rounded-xl cursor-pointer transition-all uppercase tracking-wider',
-              currentLang === 'kz' 
-                ? 'border-[#00d9ff] bg-[#00d9ff] text-[#0a0e17] shadow-[0_0_20px_rgba(0,217,255,0.5)]' 
-                : 'border-[#1a3a52] text-[#00d9ff] hover:border-[#00d9ff]'
-            ]"
-          >
-            Қазақ тілі
-          </button>
         </div>
       </header>
 
@@ -109,7 +84,7 @@
       <div class="text-center mt-10">
         <button
           class="bg-transparent border-2 border-[#00d9ff] text-[#00d9ff] px-10 py-4 rounded-xl text-lg uppercase tracking-wider transition-all hover:bg-[#00d9ff] hover:text-[#0a0e17] hover:shadow-[0_0_30px_rgba(0,217,255,0.5)] hover:scale-105"
-        >
+        zzZ>
           Получить миссию
         </button>
       </div>
@@ -119,7 +94,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-
+import report from './report.vue'
 const currentLang = ref('ru')
 
 const stats = [

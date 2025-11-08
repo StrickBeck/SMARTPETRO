@@ -2,7 +2,7 @@
   <!-- Header -->
   <header class="flex flex-row items-center w-full relative bg-[#0a0e17] border-b-2 border-[#1a3a52] max-sm:justify-between h-24 shadow-[0_0_20px_rgba(0,217,255,0.2)]">
     <div class="basis-1/4 items-center justify-start px-8 min-w-40 max-sm:basis-auto"> 
-      <p class="text-[#00d9ff] text-2xl font-bold tracking-[0.3em] [text-shadow:_0_0_15px_rgba(0,217,255,0.6)]">SMARTPETRO</p>    
+      <img src="/assets/img/logo.png" class="h-[90px] rounded-full overflow-hidden w-auto" />
     </div>
     <div class="basis-1/4 max-sm:basis-auto"></div>
     
@@ -28,6 +28,12 @@
           :class="submenu ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'"
         > 
           <NuxtLink 
+            to="/raiting" 
+            class="px-4 py-3 border-b-2 border-[#1a3a52] hover:bg-[#00d9ff] hover:text-[#0a0e17] transition-all duration-200 uppercase tracking-wider text-sm"
+          >
+            Рейтинг
+          </NuxtLink>
+          <NuxtLink 
             to="/report" 
             class="px-4 py-3 border-b-2 border-[#1a3a52] hover:bg-[#00d9ff] hover:text-[#0a0e17] transition-all duration-200 uppercase tracking-wider text-sm"
           >
@@ -49,10 +55,10 @@
       </div>
       
       <NuxtLink 
-        to="/login" 
+        to="/notice" 
         class="my-auto px-5 py-2 h-12 flex items-center border-2 border-transparent rounded-lg hover:border-[#00d9ff] hover:bg-[#00d9ff] hover:text-[#0a0e17] transition-all duration-300 uppercase tracking-wider text-sm hover:shadow-[0_0_15px_rgba(0,217,255,0.4)]"
       >
-        Вход
+        уведомление
       </NuxtLink>
       <NuxtLink 
         to="/profile" 
@@ -87,6 +93,13 @@
           class="bg-[#0a0e17] transition-all duration-300 overflow-hidden"
           :class="submenu ? 'max-h-48' : 'max-h-0'"
         >
+        <NuxtLink 
+            to="/raiting" 
+            class="block w-full p-4 border-b-2 border-[#1a3a52] hover:bg-[#00d9ff] hover:text-[#0a0e17] text-center transition-all duration-200 uppercase tracking-wider text-sm"
+            @click="burger = false"
+          >
+            Рейтинг
+          </NuxtLink>
           <NuxtLink 
             to="/report" 
             class="block w-full p-4 border-b-2 border-[#1a3a52] hover:bg-[#00d9ff] hover:text-[#0a0e17] text-center transition-all duration-200 uppercase tracking-wider text-sm"
@@ -112,11 +125,11 @@
       </div>
       
       <NuxtLink 
-        to="/login" 
+        to="/notice" 
         class="w-full p-4 border-b-2 border-[#1a3a52] hover:bg-[#00d9ff] hover:text-[#0a0e17] text-center transition-all duration-200 uppercase tracking-wider"
         @click="burger = false"
       >
-        Вход
+        увидомление
       </NuxtLink>
       <NuxtLink 
         to="/profile" 

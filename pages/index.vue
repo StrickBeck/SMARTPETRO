@@ -3,8 +3,8 @@
     <div class="max-w-7xl mx-auto">
       <!-- Header -->
       <header class="text-center mb-10 border-2 border-[#1a3a52] rounded-3xl p-8 bg-gradient-to-br from-[#0a0e17] to-[#0d1520] shadow-[0_0_30px_rgba(0,217,255,0.1)]">
-        <h1 class="text-5xl font-bold tracking-[0.5em] mb-4 [text-shadow:_0_0_20px_rgba(0,217,255,0.5)]">
-          SMARTCITY
+        <h1 class="max-sm:text-2xl text-5xl font-bold tracking-[0.5em] mb-4 [text-shadow:_0_0_20px_rgba(0,217,255,0.5)]">
+          SMARTPETRO
         </h1>
         
         <div class="w-20 h-20 border-4 border-[#00d9ff] rounded-full mx-auto my-5 relative flex items-center justify-center">
